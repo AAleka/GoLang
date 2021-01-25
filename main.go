@@ -21,6 +21,32 @@ func main() {
 
 	hey("Alnur")
 	fmt.Println(heyheyhey("Alnur"))
+
+	if 5 > 6 {
+		fmt.Println("five is greater than six")
+	} else {
+		fmt.Println("five is smaller than six")
+	}
+
+	var i int
+
+	for i = 1; i < 3; i++ {
+		fmt.Println(i)
+	}
+
+	var names = [2]string{"Alnur the first", "Alnur the second"}
+	fmt.Println(names)
+
+	var namess = []string{}
+	namess = append(namess, "Alnur")
+	namess = append(namess, "Alnur2")
+	namess = append(namess, "Alnur3")
+	fmt.Println(namess)
+
+	var value string
+	for i, value = range namess {
+		fmt.Println(i, value)
+	}
 }
 
 func hey(name string) {
