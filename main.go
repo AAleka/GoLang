@@ -47,6 +47,17 @@ func main() {
 	for i, value = range namess {
 		fmt.Println(i, value)
 	}
+
+	var department = map[string]string{
+		"Head of department": "Alnur",
+		"Slave 1":            "Gani",
+	}
+	fmt.Println(department)
+	fmt.Println(department["Head of department"])
+
+	var emptydepartment = make(map[string]string)
+	emptydepartment["New head"] = "Aleka"
+	fmt.Println(emptydepartment)
 }
 
 func hey(name string) {
